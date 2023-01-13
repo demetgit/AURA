@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+
+    <aura:attribute name="att1" type="String"/> <!--String att1; gibidir. Attribute'ler card disinda tanimlanir. -->
+    <aura:attribute name="recordId" type="String"/>
+    
+    <lightning:card>
+    	<div>Merhaba B102</div>
+        <p>Record Id = {!v.recordId}</p> <!-- v, value'dan gelir -->
+    </lightning:card>
+    
+</aura:component>
