@@ -1,0 +1,22 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+	<aura:attribute name="elma1" type="String" default="Herkese mrb" required="true"></aura:attribute>    
+    <aura:attribute name="elma2" type="Integer" default='5'/>    
+    <aura:attribute name="elma3" type="Boolean" default='false'/>  
+    <aura:attribute name="elma4" type="Account" />
+    <aura:attribute name="elma5" type="String[]" />
+    <aura:attribute name="elma6" type="Object" />
+    <aura:attribute name="elma7" type="AccountController" /> <!--herhangi bir class ısmini type a yazarsak ondan bir instance yapms oluruz-->
+    <!--AccountController elma7 = new AccountController(); gibi -->
+    
+    <lightning:card>
+    
+        Hello {!v.elma1} <br/>
+        Sayi:{!v.elma2}
+        Sayi:{!v.elma3}
+    
+    </lightning:card>
+    
+    
+  
+</aura:component>
