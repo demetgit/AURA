@@ -1,0 +1,3 @@
+<aura:application >
+	<c:iterationAura></c:iterationAura>
+</aura:application>
