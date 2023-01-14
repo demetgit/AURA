@@ -1,0 +1,10 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    <aura:attribute name="attrList" type="List" default="['Value1','Value2','Value3']"/>
+    
+    
+    <aura:iteration items="{!v.attrList}" var ="it">
+    	<div>{!it}</div>
+    </aura:iteration>
+    
+</aura:component>
