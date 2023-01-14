@@ -1,0 +1,14 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    <aura:attribute name="attr1" type="String" default="Merhaba" /> <!--String attr1='Merhaba';  (karsiligi Apex daki)-->
+    <aura:attribute name="attr2" type="String"/> <!--ilk degeri olmayan variable tanmladk-->
+    <lightning:button label="Value getir" onclick="{!c.onclickHandler}" /> <!--burdan git controller a,action i cagr bas-->
+    
+    <div>Attr2 degeri ={!v.attr2}</div> <!--js den gelecek degeri,bunu ekraana yazdrcaz tklaynca-->
+    
+    <aura:attribute name="inputValue" type="String"/>
+    <lightning:input name="input1" type="Text" label="Deger giriinz" onchange="{!c.inputChangeHandler}"/> 
+    <div>Girilen deger : {!v.inputValue}</div>
+    
+    
+</aura:component>
