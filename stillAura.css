@@ -1,0 +1,14 @@
+.THIS {
+    color:red; 
+    
+}
+.THIS.green{
+    color:green;
+    background-color:black;
+}
+.THIS.blue{
+    color:blue;
+    background-color:pink;
+    text-align:center;
+    font-size:30px;
+}
