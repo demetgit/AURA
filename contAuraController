@@ -1,0 +1,9 @@
+({
+	myAction : function(component, event, helper) {
+		
+	},
+    elma : function(component, event, helper) {
+		alert('bu mesaj controller dan gelmektedr');
+        helper.testHelper(); //testHelper i static method gbi cagrdk
+	}
+})
