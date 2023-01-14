@@ -1,0 +1,8 @@
+({
+	helperMethod : function() {
+		
+	},
+    helperMethod : function() {
+		alert('bu mesaj helper dan geliyor'); // bunu controller dan cagr
+	}
+})
