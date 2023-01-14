@@ -1,0 +1,15 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="showMe" type="Boolean" default="true" />
+    <lightning:input name="showControl" type="Checkbox" label="Show" checked="true" onchange="{!c.showHandler}"></lightning:input>
+    
+    <aura:if isTrue="{!v.showMe}"> <!--lwc deki templete olstrma gibi,eger showMe true ise bunun ici gozukur-->
+    	<p>true gozukur</p>	
+     <aura:set attribute="else"><!--else in syntax i -->
+        
+        <p>false gozukur</p> 
+      </aura:set>
+    
+    </aura:if>
+    
+    
+</aura:component>
