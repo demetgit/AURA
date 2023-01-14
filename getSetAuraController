@@ -1,0 +1,17 @@
+({
+	onclickHandler : function(component, event, helper) {
+		var deger=component.get('v.attr1'); //controller tarafnda unlem yoktur
+        									//attr1 in icini okuduk ve 'deger' e yukledk
+	
+        
+        component.set("v.attr2","deger Controller dan atandi"); //attr2 ye 2.parametre icindeki yaziyi yukledk
+    console.log(deger);
+    
+    },
+    inputChangeHandler:function(component, event, helper) {
+        let girilenDeger= event.getParam("value"); //inputtan girilen value yi yakaladk ve br degere yukledk
+    	component.set("v.inputValue",girilenDeger); //input grince  altta da yazmasi icin
+    
+    
+    }
+})
