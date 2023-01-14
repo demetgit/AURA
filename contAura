@@ -1,0 +1,4 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.elma}" /> 
+    <!--- burdaki c :elma fonksyoondur,bunu tanmlamak için controller a gidilr,direkt controller a tikla,helper için helper a tkla -->
+</aura:component>
